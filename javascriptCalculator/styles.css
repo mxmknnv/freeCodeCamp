@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700|Orbitron');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    display: flex;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    background: #e3f2fd;
+}
+
+.hide {
+    display: none !important;
+}
+
+.wrapper {
+    width: 360px;
+}
+
+.wrapper__header {
+    margin-bottom: 30px;
+}
+
+.wrapper__content {}
+
+/* --------------------------------------- Header --------------------------------------- */
+
+.header {}
+
+.header__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    
+    text-align: center;
+}
+
+/* --------------------------------------- Content --------------------------------------- */ 
+
+.content {
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 5px 10px rgba(0,0,0,.22);
+}
+
+.content__display {}
+
+.content__keyboard {}
+
+/* --------------------------------------- Display --------------------------------------- */ 
+
+.display {
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    
+    background-color: #444;
+    text-align: right;
+    color: #fffff7;
+    
+    padding: 15px 20px;
+}
+
+.display__current-input {
+    font-size: 27px;
+    margin-bottom: 5px;
+    height: 34px;
+}
+
+.display__all-input {
+    font-size: 16px;
+    height: 20px;
+}
+
+/* --------------------------------------- Keyboard --------------------------------------- */ 
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(5, 80px);
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.keyboard__key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.keyboard__key[type=num] {
+    background-color: #FFFFE4;
+}
+
+.keyboard__key[type=num]:active {
+    background-color: #f0f0d6;
+}
+
+.keyboard__key[type=func] {
+    background-color: #69a3c5;
+    color: #FFFFE4;
+}
+
+.keyboard__key[type=func]:active {
+    background-color: #6196b6;
+}
+
+.keyboard__key[type=sys] {
+    background-color: #fd7878;
+    color: #FFFFE4;
+}
+
+.keyboard__key[type=sys]:active {
+    background-color: #ee7171;
+}
+
+.keyboard__key-width-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

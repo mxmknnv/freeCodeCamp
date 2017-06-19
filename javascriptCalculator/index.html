@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header wrapper__header">
+            <p class="header__title">JS Calculator</p>
+        </div>    
+        <div class="content wrapper__content">
+            <div class="display content__display">
+                <p class="display__current-input">
+                    <span id="display__function"></span>
+                    <span id="display__sign"></span>
+                    <span id="display__number">0</span>
+                </p>
+                <p class="display__all-input">
+                    <span id="display__expression"></span>
+                </p>
+            </div>
+            <div class="keyboard content__keyboard">
+                <!-- first line -->
+                <span type="sys" value="clear-all-input" class="keyboard__key ">AC</span>
+                <span type="sys" value="clear-current-input" class="keyboard__key">CE</span>
+                <span type="func" value="sign" class="keyboard__key">±</span>
+                <span type="func" value="/" class="keyboard__key">∕</span>
+                <!-- second line -->
+                <span type="num" value="7" class="keyboard__key">7</span>
+                <span type="num" value="8" class="keyboard__key">8</span>
+                <span type="num" value="9" class="keyboard__key">9</span>
+                <span type="func" value="*" class="keyboard__key">✕</span>
+                <!-- third line -->
+                <span type="num" value="4" class="keyboard__key">4</span>
+                <span type="num" value="5" class="keyboard__key">5</span>
+                <span type="num" value="6" class="keyboard__key">6</span>
+                <span type="func" value="-" class="keyboard__key">−</span>
+                <!-- fourth line -->
+                <span type="num" value="1" class="keyboard__key">1</span>
+                <span type="num" value="2" class="keyboard__key">2</span>
+                <span type="num" value="3" class="keyboard__key">3</span>
+                <span type="func" value="+" class="keyboard__key">+</span>
+                <!-- fifth line -->
+                <span type="num" value="0" class="keyboard__key keyboard__key-width-2">0</span>
+                <span type="func" value="decimalMark" class="keyboard__key">.</span>
+                <span type="func" value="calculate" class="keyboard__key">=</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
