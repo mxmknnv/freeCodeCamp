@@ -6,17 +6,12 @@
     padding: 0px;
 }
 
-html {
-    display: flex;
-    min-height: 100%;
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     
-    width: 100%;
+    min-height: 100vh;
     background: #e3f2fd;
 }
 
