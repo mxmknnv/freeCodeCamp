@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+    document.body.addEventListener('keyup', pKeyboardHandler);
+    
     [].forEach.call(document.querySelectorAll('.keyboard__key'), function(element) {
         element.addEventListener('click', vKeyboardHandler);
     });
     
-    document.body.addEventListener("keyup", pKeyboardHandler);
-    
     Calculator.init();
 });
 
+// ===================================
 // Physical Keyboard Handler
+// ===================================
 
 function pKeyboardHandler(event) {
-    console.log(event)
-    
     const numberKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     const functionKeys = ['Enter', '+', '-', '*', '/'];
     const decimalMarkKeys = ['.', ','];
     const sysKeys = ['Escape', 'Backspace'];
     const sysKeysToCommands = {
-        'Escape': 'clear-all-input',
+        'Escape': 'clear-all-input', 
         'Backspace': 'clear-current-input'
     };
     
@@ -35,9 +35,9 @@ function pKeyboardHandler(event) {
     if(functionKeys.includes(value)) {
         if(value == 'Enter') {
             Calculator.addFunction('calculate');        
-        }
-        
-        Calculator.addFunction(value);    
+        } else {
+            Calculator.addFunction(value);    
+        }    
     }
     
     if(sysKeys.includes(value)) {
@@ -45,7 +45,9 @@ function pKeyboardHandler(event) {
     }
 }
 
+// ===================================
 // Virtual Keyboard Handler
+// ===================================
 
 function vKeyboardHandler(event) {
     let type = event.target.getAttribute('type'),
@@ -99,13 +101,20 @@ Calculator.update = function(zeroFlag) {
     this.displayElement.number.textContent = this.temp.number;
     this.displayElement.expression.textContent = this.temp.expression;
     
-    console.log(this.temp);
+    console.groupCollapsed('Calculator.update');
+    console.log(`temp.function: ${this.temp.function}`);
+    console.log(`temp.sign: ${this.temp.sign}`);
+    console.log(`temp.number: ${this.temp.number}`);
+    console.log(`temp.expression: ${this.temp.expression}`);
+    console.log(`temp.decimalMark: ${this.temp.decimalMark}`);
+    console.groupEnd();
 }
 
 Calculator.addNumber = function(num) {
-    console.log(`addNumber: ${num}`);
+    console.log(`Calculator.addNumber: ${num}`);
     
     if(this.temp.number.length >= this.limits.numberLength) {
+        console.log(`The number is already too large, current limit: ${this.limits.numberLength} numerals`);
         return;
     }
    
@@ -118,7 +127,7 @@ Calculator.addNumber = function(num) {
 }
 
 Calculator.addFunction = function(func) {
-    console.log(`addFunction: ${func}`);
+    console.log(`Calculator.addFunction: ${func}`);
     
     const simpleFunctions = ['+', '-', '*', '/'];
     
@@ -163,10 +172,10 @@ Calculator.addFunction = function(func) {
     }
     
     if(func == 'calculate') {
-        if(this.temp.number.length == 0) {
+        if(this.temp.number.length == 0 || this.temp.function.length == 0) {
+            console.log('Nothing to calculate');
             return;
         }
-        
         
         let newExpression = ` ${this.temp.function} ${this.temp.sign}${this.temp.number}`;
         let result = eval(this.temp.expression + newExpression)
