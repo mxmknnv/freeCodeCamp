@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Play:400|Orbitron');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    background: #fdf9f9;
+}
+
+.content {
+    width: 300px;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__clock {}
+
+.content__panel {}
+
+.panel {
+    display: flex;
+}
+
+.panel__controls {
+    margin-right: 7px;
+}
+
+.panel__settings {}
+
+/* --------------------------------------- Settings --------------------------------------- */
+
+.settings {
+    padding: 7px 7px;
+    border: 1px solid #9C27B0;
+}
+
+.settings__section {
+    margin-bottom: 7px;
+}
+
+.settings__section:last-child {
+    margin-bottom: 0px;
+}
+
+.settings__title {
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.settings__value-box {
+    text-align: center;
+}
+
+.settings__btn {
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    
+    padding: 2px 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.settings__value {
+    width: 30px;
+    padding: 0px 3px;
+    
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center; 
+}
+
+.settings__value-error {
+    border: 2px solid red;
+    outline: none;
+}
+
+/* --------------------------------------- Controls --------------------------------------- */ 
+
+.controls {
+    display: flex;
+    flex-flow: column;
+    
+    width: 78px;
+}
+
+.controls__btn {
+    display: inline-block;
+    padding: 4px 5px;
+    margin-bottom: 7px;
+
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center; 
+    
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.controls__btn:last-child{
+    margin-bottom: 0px;
+}
+
+.controls__btn_amber {
+    border: 1px solid #FFB300;
+    color: #FFB300;
+}
+
+.controls__btn_green {
+    border: 1px solid #388E3C;
+    color: #388E3C;
+}
+.controls__btn_indigo {
+    border: 1px solid #3F51B5;
+    color: #3F51B5;
+}

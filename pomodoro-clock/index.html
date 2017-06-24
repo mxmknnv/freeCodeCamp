@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="content">   
+        <div class="clock content__clock">
+            <svg class="clock__face" id="face" width="300" height="300"></svg>
+        </div> 
+        <div class="panel content__panel">
+            <div class="controls panel__controls">
+                <span data-type="control" data-action="start" class="controls__btn controls__btn_green">Start</span>
+                <span data-type="control" data-action="switch" class="controls__btn controls__btn_indigo">Switch</span>
+                <span data-type="control" data-action="reset" class="controls__btn controls__btn_amber">Reset</span>
+            </div>
+            <div class="settings panel__settings">
+                <div class="settings__section">
+                    <span class="settings__title">Session Length</span>
+                    <div class="settings__value-box">
+                        <span data-type="settings" data-section="session-length" data-action="less" class="settings__btn">&lt;</span>
+                        <input data-type="settings" data-section="session-length" class="settings__value" type="text" value="25">
+                        <span data-type="settings" data-section="session-length" data-action="more" class="settings__btn">&gt;</span>
+                    </div>
+                </div>
+                <div class="settings__section">
+                    <span class="settings__title">Break Length</span>
+                    <div class="settings__value-box">
+                        <span data-type="settings" data-section="break-length" data-action="less" class="settings__btn">&lt;</span>
+                        <input data-type="settings" data-section="break-length" class="settings__value" type="text" value="5">
+                        <span data-type="settings" data-section="break-length" data-action="more" class="settings__btn">&gt;</span>
+                    </div>
+                </div>       
+            </div>    
+        </div>      
+    </div>
+</body>
+</html>
