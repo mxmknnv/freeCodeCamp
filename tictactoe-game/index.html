@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="content">   
+        <p class="content__status visibilityHidden" id="status">X makes the first move</p>
+        <div class="content__sections">
+            <div class="welcome" id="welcome">
+                <p class="welcome__title">Choose your destiny:</p>
+                <div class="welcome__buttons-wrapper">
+                    <span data-type="button" data-action="set-player-x" class="welcome__button">X</span>
+                    <span data-type="button" data-action="set-player-o" class="welcome__button">O</span>
+                </div>
+                <p class="welcome__title">X makes the first move</p>
+            </div>
+            <div class="table displayNone" id="table">
+                <div id="table-cell-0" data-index="0" class="table__cell"></div>
+                <div id="table-cell-1" data-index="1" class="table__cell"></div>
+                <div id="table-cell-2" data-index="2" class="table__cell"></div>
+                <div id="table-cell-3" data-index="3" class="table__cell"></div>
+                <div id="table-cell-4" data-index="4" class="table__cell"></div>
+                <div id="table-cell-5" data-index="5" class="table__cell"></div>
+                <div id="table-cell-6" data-index="6" class="table__cell"></div>
+                <div id="table-cell-7" data-index="7" class="table__cell"></div>
+                <div id="table-cell-8" data-index="8" class="table__cell"></div>
+            </div>    
+        </div>
+        <span data-type="button" data-action="new-game" class="content__button visibilityHidden" id="new-game-btn">New game</span>
+    </div>
+</body>
+</html>

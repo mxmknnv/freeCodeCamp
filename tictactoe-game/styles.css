@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+/* --------------------------------------- Content --------------------------------------- */ 
+
+.content {}
+
+.content__status {
+    margin-bottom: 20px;
+    
+    text-align: center;
+    font-size: 19px;
+}
+
+.content__sections {
+    width: 320px;
+    height: 320px;
+    border: 5px solid  black;
+    
+    margin-bottom: 20px;
+}
+
+.content__button {
+    display: block;
+    padding: 5px 5px;
+    border: 2px solid black;
+    
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* --------------------------------------- Welcome --------------------------------------- */ 
+
+.welcome {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome__title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.welcome__buttons-wrapper {
+    text-align: center;
+}
+
+.welcome__button {
+    padding: 0px 5px;
+    
+    font-size: 90px;
+    font-weight: 300;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* --------------------------------------- Table --------------------------------------- */ 
+
+.table {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    
+    background-color: black;
+}
+
+.table__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 90px;
+    font-weight: 300;
+    
+    background-color: #f8f8f8;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.table__cell-highlight {
+    color: #00c146;
+}
