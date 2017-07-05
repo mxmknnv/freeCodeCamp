@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Roboto', sans-serif;
+    background: #e4e4e4;
+    min-height: 100vh;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* --------------------------------------- Content --------------------------------------- */ 
+
+.content {
+    --quarter-size: 250px;
+    --small-circle-size: 230px;
+    --border: 6px solid #333;
+    --border-small: 3px solid #333;
+    
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px #333;
+}
+
+.content__big-circle {}
+
+.content__small-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* --------------------------------------- Big Circle --------------------------------------- */ 
+
+.big-circle {
+    display: grid;
+    grid-template-columns: var(--quarter-size) var(--quarter-size);
+    grid-template-rows: var(--quarter-size) var(--quarter-size);
+}
+
+.big-circle__quarter {
+    border: var(--border);
+}
+
+.big-circle__quarter[data-position="top-left"] {
+    border-top-left-radius: 100%;
+    border-bottom: var(--border-small);
+    border-right: var(--border-small);
+}
+
+.big-circle__quarter[data-position="top-right"] {
+    border-top-right-radius: 100%;
+    border-bottom: var(--border-small);
+    border-left: var(--border-small);
+}
+
+.big-circle__quarter[data-position="bottom-left"] {
+    border-bottom-left-radius: 100%;
+    border-top: var(--border-small);
+    border-right: var(--border-small);
+}
+
+.big-circle__quarter[data-position="bottom-right"] {
+    border-bottom-right-radius: 100%;
+    border-top: var(--border-small);
+    border-left: var(--border-small);
+}
+
+/* --------------------------------------- Colors --------------------------------------- */ 
+
+.green {
+    background-color: #00a74a;
+}
+
+.red{
+    background-color : #9f0f17;
+}
+
+.blue{
+    background-color : #094a8f;
+}
+
+.yellow{
+    background-color : #cca707;
+}
+
+.green.light{
+    background-color : #13ff7c;
+}
+
+.red.light{
+    background-color : #ff4c4c;
+}
+
+.blue.light{
+    background-color : #1c8cff;
+}
+
+.yellow.light{
+    background-color : #fed93f;
+}
+
+/* -------------------------------------- Small Circle -------------------------------------- */ 
+
+.small-circle {
+    width: var(--small-circle-size);
+    height: var(--small-circle-size);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: var(--border);
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.menu {}
+
+.menu__logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    
+    margin-bottom: 15px;
+}
+
+.menu__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu__button {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.menu__settings {
+    margin-top: 15px;
+}
+
+.menu__statistics {
+    margin-bottom: 15px;
+}
+
+.menu__message {
+    margin-bottom: 15px;
+    
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* -------------------------------------- Statistics -------------------------------------- */ 
+
+.statistics {}
+
+.statistics__key {
+    font-size: 16px;
+    font-weight: 400;
+    
+    margin-bottom: 3px;
+}
+
+.statistics__key:last-child {
+    margin-bottom: 0px;
+}
+
+/* -------------------------------------- Settings -------------------------------------- */ 
+
+.settings__key {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Checkbox */
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    position: relative;      
+    width: 20px;             
+    height: 20px;
+    border: 1px solid #a2a2a2;
+}
+
+.checkbox-custom,.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "";            
+    display: block;          
+    position: absolute;      
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+ 
+    background: #413548;
+    border-radius: 2px;
+}

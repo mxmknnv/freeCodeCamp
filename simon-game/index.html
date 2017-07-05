@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="content">   
+        <div class="big-circle content__big-circle">
+            <div id="0" data-position="top-left" class="big-circle__quarter green"></div>
+            <div id="1" data-position="top-right" class="big-circle__quarter red"></div>
+            <div id="2" data-position="bottom-left" class="big-circle__quarter blue"></div>
+            <div id="3" data-position="bottom-right" class="big-circle__quarter yellow"></div>
+        </div>
+        <div class="small-circle content__small-circle">
+            <dev class="menu small-circle__menu">
+                <p class="menu__logo">Simon Game</p>
+                <div id="section-welcome" class="menu__section">
+                    <span data-action="start" class="menu__button">start</span>
+                    <div class="settings menu__settings">
+                        <span class="settings__key">Strict mode</span>
+                        <label class="settings__value">
+                            <input data-settings="mode" class="checkbox" type="checkbox">
+                            <span class="checkbox-custom"></span>
+                        </label>
+                    </div>
+                </div>
+                <div id="section-game" class="menu__section hide">
+                    <div id="statistics" class="statistics menu__statistics">
+                        <p class="statistics__key">Steps: <span id="steps">0</span></p>
+                        <p class="statistics__key">Errors: <span id="errors">0</span></p>
+                    </div>
+                    <p id="message" class="menu__message hide">You have won!</p>
+                    <span data-action="new-game" class="menu__button">new game</span>
+                </div>
+            </dev>      
+        </div>
+    </div>
+</body>
+</html>
