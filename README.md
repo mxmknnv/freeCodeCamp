@@ -15,3 +15,7 @@ FreeCodeCamp Challenges ([link](https://www.freecodecamp.com/map)):
 For "unbeatable AI" implementation I have used minimax algorithm and alpha beta pruning algorithm for optimization.
 
 <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-tictactoe-game-1.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-tictactoe-game-2.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-tictactoe-game-3.PNG" height="300">
+
+4) Simon game ([link](https://mxmknnv.github.io/freeCodeCamp/simon-game/))
+
+<img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-simon-game-1.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-simon-game-2.PNG" height="300">
