@@ -19,3 +19,7 @@ For "unbeatable AI" implementation I have used minimax algorithm and alpha beta 
 4) Simon game ([link](https://mxmknnv.github.io/freeCodeCamp/simon-game/))
 
 <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-simon-game-1.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-simon-game-2.PNG" height="300">
+
+5) Recipe box (React) ([link](https://mxmknnv.github.io/freeCodeCamp/recipe-box/public/index.html))
+
+<img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-recipe-box-1.PNG" height="250"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-recipe-box-2.PNG" height="250"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-recipe-box-3.PNG" height="250">
