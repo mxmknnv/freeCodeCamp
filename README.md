@@ -27,3 +27,7 @@ For "unbeatable AI" implementation I have used minimax algorithm and alpha beta 
 6) Markdown previewer (React) ([link](https://mxmknnv.github.io/freeCodeCamp/markdown-previewer/public/index.html))
 
 <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-markdown-previewer-1.PNG">
+
+7) FreeCodeCamp Leaderboard (React) ([link](https://mxmknnv.github.io/freeCodeCamp/fcc-leaderboard/public/index.html))
+
+<img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-freecodecamp-leaderboard-1.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-freecodecamp-leaderboard-2.PNG" height="300">
