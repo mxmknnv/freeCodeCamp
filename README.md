@@ -31,3 +31,8 @@ For "unbeatable AI" implementation I have used minimax algorithm and alpha beta 
 7) FreeCodeCamp Leaderboard (React) ([link](https://mxmknnv.github.io/freeCodeCamp/fcc-leaderboard/public/index.html))
 
 <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-freecodecamp-leaderboard-1.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-freecodecamp-leaderboard-2.PNG" height="300">
+
+
+8) Game Of Life (React) ([link](https://mxmknnv.github.io/freeCodeCamp/game-of-life/public/index.html))
+
+<img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-game-of-life-1.PNG" height="300"> <img src="https://github.com/mxmknnv/freeCodeCamp/blob/master/screenshots/sc-game-of-life-2.PNG" height="300">
