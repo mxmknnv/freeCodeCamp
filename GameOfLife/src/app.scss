@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+$color_green: #548c27;
+$color_pink: #E91E63;
+
+@mixin user-select-none() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    background-color: #EEE8D6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Wrapper */
+
+.header {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.header__logo {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color_green;
+}
+
+.header__controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header__button {
+  display: inline-block;
+  padding: 5px 5px;
+  margin-right: 5px;
+  border: 1px solid $color_green;
+  
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color_green;
+
+  @include user-select-none();
+  cursor: pointer;
+}
+
+.header__button:last-child {
+  margin-right: 0px;
+}
+
+.header__stat {
+  margin-top: 20px;
+}
+
+.header__settings {
+  margin-top: 20px;
+}
+
+/* Stat */
+
+.stat__element {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.wrapper__content {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/* Content */
+
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.board__cell {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: #ccc;
+}
+
+.board__cell.board__cell_alive {
+  background-color: green;
+}
+
+/* Settings */
+
+.settings__section {
+    display: flex;
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.settings__section:last-child {
+    margin-bottom: 0px;
+}
+
+.settings__key {
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 5px 10px;
+
+    font-size: 13px;
+    font-weight: 400;
+    white-space: nowrap;
+
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #555;
+}
+
+.settings__value {
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px 5px;
+    margin-left: -1px;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    border: 1px solid #ccc;
+    color: #555;
+}
+
+.setting__controls {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.settings__button {
+  display: inline-block;
+  padding: 5px 5px;
+  margin-right: 5px;
+  
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+  @include user-select-none();
+  cursor: pointer;
+}
+
+.settings__button:last-child {
+  margin-right: 0px;
+}
+
+.settings__button.settings__button_blue {
+  border: 1px solid $color_green;
+  color: $color_green;
+}
+
+.settings__button.settings__button_orange {
+  border: 1px solid $color_pink;
+  color: $color_pink;
+}
